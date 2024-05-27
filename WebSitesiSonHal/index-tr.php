@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Efe Gültekinin Blog Web Sitesi">
+	<meta name="google-site-verification" content="cqaMsRbuBOIeeHGr1Ok2vu9CLosowt1c3EfROIkPZIo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Efe Gültekin, Efe Hasan Gültekin, Efe, Gültekin">
+    <meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <title>EfeGultekin</title>
+    <link rel="stylesheet" href="Css komutları/style.css">
+    <link rel="short icon" href="Resimler/favicon.ico">
+    <script src="Java Script Komutları/Yazi.js"></script>
+    
+</head>
+<body>
+    
+    <nav>
+        <div>
+        <ul id="nav">
+            <li class="slide-animation"><a href="#Home">Ana Sayfa</a></li>
+            <li class="slide-animation"><a href="#About">Hakkımda</a></li>
+            <li class="slide-animation"><a href="#mySkills">Yeteneklerim</a></li>
+            <li class="slide-animation"><a href="#Projects">Projelerim</a></li>
+            <li class="slide-animation"><a href="#Contact">İletişim</a></li>
+            <li class="slide-animation"><a id="mode-toggle-button" style="width: 151px;">Dark Mode</a></li>
+			<li><a><div class="toogle_btn">
+            <i class="fa-solid fa-bars"></i>
+            </div></a></li>
+            <script src="Java Script Komutları/buton.js"></script>
+        </ul>
+        </div>
+        <div>
+        <ul class="dropdown_menu">
+            <li class="slide-animation"><a href="#Home">Home</a></li>
+            <li class="slide-animation"><a href="#About">About</a></li>
+            <li class="slide-animation"><a href="#mySkills">Skills</a></li>
+            <li class="slide-animation"><a href="#Projects">Projects</a></li>
+            <li class="slide-animation"><a href="#Contact">Contact</a></li>
+            <li class="exitButton"><a>Exit</a></li>
+            <script src="Java Script Komutları/buton.js"></script>
+        </ul>
+        </div>
+    </nav>
+    <script>
+        const toggleBtn = document.querySelector('.toogle_btn')
+        const exitBtn = document.querySelector('.exitButton')
+        const toggleBtnIcon = document.querySelector('.toogle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+        exitBtn.onclick = function (){
+            dropDownMenu.classList.remove('open');
+            toggleBtnIcon.className = 'fa-solid fa-bars';
+        }
+
+    </script>
+    <header>
+
+        <div class="animationText"></div>
+        <div id="Home" style="bottom: 150px;">
+            <a href="https://github.com/EfeHasan" class="guzel-button"  target="_blank">Githubım</a>
+            <p id="mainText">Ben
+                <span
+                class="typewrite"
+                    data-period="2000"
+                    data-words='[" Öğrenciyim.", " Yazılım Geliştiriciyim.", "Oyun Geliştiricisiyim." ,"Web Geliştiricisiyim."]'>
+                </span>
+                <script src="Java Script Komutları/Yazi.js"></script>
+            </p>
+        </div>
+    </header>
+    <article>
+        
+	<h1 style="text-align: center;"  class="title">About</h1>
+        <div id = "About">
+
+            <div class = "box">
+                <h2 style="text-align: center ; font-family: 'Courier New', Courier, monospace; color:red;">Müzikler</h2>
+                <p style="text-align: center;">                
+                    Türk rock müziği, duygularımı en saf haliyle ifade etmek için kullandığım araçtır. Güçlü gitar rifleri ve etkileyici sözleriyle bu müzik türü,
+                    iç dünyamda gezinmeme ve duygusal derinliklere dalmama yardımcı olur. Rock müziğin enerjisiyle dolu ruh hali, benim için özgürlüğün ve cesaretin 
+                    bir simgesidir.
+                </p>
+            </div>
+            <div class="box">                
+                <h2 style="text-align: center ; font-family: 'Courier New', Courier, monospace; color:red;">Ben Kimim</h2>
+                <p style="text-align: center;">
+
+                    Ben İstanbul, Türkiye'den kendi kendine yetişmiş bir programcıyım. Şu anda İmmib Erkan Avcı Mesleki ve Teknik Anadolu Lisesi Bilgi Teknolojileri
+                    bölümünde öğrenciyim. Öğrenme sınırlarını aşmış biri olarak sürekli kendimi geliştirmeyi seven biriyim. Bilim kurgu, psikoloji, tarih ve 
+                    bilimle ilgili kitapları okumaktan hoşlanıyorum.
+                </p>
+            </div>
+            <div class="box">
+                <h2 style="text-align: center ; font-family: 'Courier New', Courier, monospace; color:red;">Kodlamaya ve Kitap Okumaya Tutkum</h2>
+                <p style="text-align: center;">
+                    Bilgisayar ekranının karşısında saatler geçirmek, birçok insan için sadece kod yazmayı ifade etmeyebilir. Benim için, bu bir tutku ve keşif yolculuğudur.
+                    Hem kod yazma hem de kitap okuma, beni besleyen ve sürekli büyüme fırsatları sunan iki temel öğedir.
+                </p>
+            </div>
+        </div>
+
+		        <h1 style="text-align: center;clear: both;"  class="title">Yeteneklerim</h1>
+
+        <div id="mySkills">
+
+            <ul>
+                <div class="Skills">
+                    <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" height="40"/><a class="Links" href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps" target="_blank" rel="noreferrer">C#</a></li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40" height="40"/> </a> <a class="Links" href="https://www.helius.dev/?gclid=Cj0KCQiAgqGrBhDtARIsAM5s0_lXppRC74lXl_2yaGLOLgH9O6dRbOGZ0C1BEy4BFYc0qTPBSnKf8ycaAvc0EALw_wcB" target="_blank" rel="noreferrer">Css3</a></li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" height="40"/> </a> <a class="Links" href="https://www.java.com" target="_blank" rel="noreferrer">Java</a></li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" width="40" height="40"/> </a> <a class="Links" href="https://www.arduino.cc" target="_blank" rel="noreferrer">Arduino</a></li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"  width="40" height="40"/> </a> <a class="Links" href="https://html.com" target="_blank" rel="noreferrer">Html</li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40"/><a class="Links" href="https://www.mysql.com" target="_blank" rel="noreferrer">MySql</a></li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" width="40" height="40"/> <a class="Links" href="https://www.php.net" target="_blank" rel="noreferrer">Php</a></li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40"/><a class="Links" href="https://www.python.org" target="_blank" rel="noreferrer">Python</a> </li>
+                </div>
+                <div class="Skills">
+                    <li><img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" width="40" height="40"/>  <a class="Links" href="https://unity.com/" target="_blank" rel="noreferrer">Unity</a></li>
+                </div>
+                <div class="Skills">
+                    <li><img src="Resimler/JavaScript icon.png" width="40" height="40"/>  <a class="Links" href="https://www.w3schools.com/js/" target="_blank" rel="noreferrer">JavaScript</a></li>
+                </div>
+            </ul>
+        </div>
+        <h1 style="text-align: center; clear: both; position: relative; top: 230px;" class="title">Projelerim</h1>
+        <div id="Projects" style="text-align: center;clear: both; top: 150px; position: relative;">          
+              <ul>
+                <div class="Projects">
+                    <li>
+                        <div class="boxProject">
+                            <h2 style="text-align: center;"><a href="https://github.com/EfeHasan/Kutuphane-Projesi-Wpf" title="Click" class="projectButton"  target="_blank">Kütüphane Projesi</a></h2>
+                            <p>
+                                Bu masaüstü uygulaması, bir kütüphane veya kitap yönetim sistemi için temel işlevselliği sağlar. Kullanıcılar kitap ekleyebilir,
+                                silebilir, kullanıcıları kaydedebilir ve kitapları ödünç alabilir/geri verebilirler.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="boxProject">
+                            <h2 style="text-align: center;"><a href="https://github.com/EfeHasan/JavaGirisSeviyeOrnekler" title="Click" class="projectButton"  target="_blank">Basit Java Örnekleri</a></h2>
+                            <p>
+                            Bu depo, Java programlamaya yeni başlayanların pratiğe dayalı projelerle kodlama serüvenine başlamalarına yardımcı olmaya adanmıştır.
+                            Öğrenci, kendi kendine öğrenen veya başka bir dilde geçiş yapan olun, bu projeler temel Java kavramlarını pekiştirmek ve pratik beceriler 
+                            kazanmak için tasarlanmıştır.
+                            </p>
+                        </div>
+                       
+                    </li>
+                    <li>
+                        <div class="boxProject">
+                            <h2 style="text-align: center;"><a href="https://github.com/EfeHasan/CustomList" class="projectButton" title="Click"  target="_blank">Custom List</a></h2>
+                            <p>
+                                Bu C# projesi, özelleştirilebilir bir genel liste sınıfını içerir. Bu Liste sınıfı, dinamik olarak büyüyen ve öğeler eklemek, kaldırmak ve manipüle
+                                etmek için kullanılabilen bir koleksiyonu temsil eder.
+                            </p>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div id="Contact"></div>
+        <div class="container">
+            <h1 class="title">İletişim</h1>
+            <div class="contact-area">
+                <div class="cont-left">
+                    <div class="cont-top">
+                        <div class="cont-element">
+                            <i class="far fa-address-card"></i>
+                            <address>Istanbul / Turkey</address>
+                        </div>
+                        <div class="cont-element">
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:efegultrkin4@gmail.com">efegultrkin4@gmail.com
+                            </a>
+                        </div>
+                        <div class="cont-element">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+905384003936">+90(538 400 3936)</a>
+                        </div>
+                    </div>
+                    <div class="cont-bottom">
+                        <a href="https://www.facebook.com/profile.php?id=100010358023086&locale=tr_TR"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="https://twitter.com/EfeGlte98921045"><i class="fab fa-twitter"></i></a> 
+                        <a href="https://www.instagram.com/efegultekinhasan1334/"><i class="fab fa-instagram"></i></a> 
+                        <a href="https://www.linkedin.com/in/efe-hasan-g%C3%BCltekin-a80670242/"><i class="fab fa-linkedin-in"></i></a> 
+                    </div>
+                </div>
+                <div class="cont-right">
+                    <form action="phpKomutlari/save.php" method="post">
+                        <input type="text" name="name" id="text" placeholder="Full Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+                        <button name="Send">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <footer>
+        <div id="end">
+        <p style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">Websitesini ziyaret ettiğiniz için teşekkür ederiz! İçeriğimizi paylaşarak veya geri bildirimde bulunarak bize destek olabilirsiniz. Sizi tekrar görmeyi bekliyoruz. Harika bir gün geçirmenizi dileriz!</p>
+        <p style="text-align: center; color: white; font-family: 'Courier New', Courier, monospace;">Telif Hakkı © EfeGultekin tarafından Üretilmiştir</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

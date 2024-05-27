@@ -1,0 +1,464 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap";
+body,html {
+    margin: 0;
+    font: bold 20px/1.4 'Open Sans', arial, sans-serif;
+    color: black;
+    
+    background-color: white;
+  }
+
+  nav {
+    background-color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+body{
+  opacity: 0; /* Sayfa yüklendiğinde öğeyi gizle */
+  transform: translateY(-50px); /* Yüklenirken yukarıda başlat */
+
+  /* Animasyon tanımı */
+  animation: fadeInDown 1.5s ease-out forwards;
+}
+
+/* @keyframes tanımı */
+@keyframes fadeInDown {
+  to {
+    opacity: 1; /* Tamamen görünür hale gelinceye kadar yavaşça artır */
+    transform: translateY(0); /* Yüklenirken aşağı kaydır */
+  }
+}
+#aciklama{
+
+  bottom: -1000px;
+  position: relative;
+}
+
+  nav ul { 
+            position: fixed;
+            right: 1px;
+            margin: 0;
+            padding: 0; 
+            list-style: none; 
+            display: table;
+            text-align: center;
+          }
+  
+          nav li { 
+            display: table-cell; 
+            position: relative; 
+            padding: 15px 0;
+          }
+          nav a {
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;     
+            display: inline-block;
+            padding: 15px 20px;
+            position: relative;
+          }
+  
+  nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+	content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+     nav a:hover:after { 
+        width: 100%; 
+        left: 0;
+        background-color:black;
+      }
+  
+          @media screen and 
+          (max-height: 300px) {
+              ul {
+                  margin-top: 40px;
+              }
+          }
+         
+
+          #mainText {
+          font-family:"Poppins",Sans-serif;
+          text-align:center;
+          bottom: -220px;
+          position: relative;
+          color:rgb(8, 90, 90);
+          font-size:40px;
+          font-weight:500;
+          line-height:70px;
+          }
+          
+          #mainText span {
+          color:rgb(162, 20, 20);
+          }
+          
+          @media(max-width:768px) {
+          .animation_text h1 {
+          font-size:30px
+          }
+          }
+          .dropdown_menu{
+            display: none;
+            font-size: 15px;
+            position: absolute;
+            right: 2rem;
+            height: 0;
+            top: 60px;
+            width: 300px;
+            background-color: aquamarine;
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+
+          .dropdown_menu.open{
+            height: 500px;
+          }
+
+          .dropdown_menu li{
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+
+          .guzel-button {
+            display: inline-block;
+            position: relative;
+            top: 52%;
+            left: 47%;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .guzel-button:hover {
+			scale: 1.05;
+            background-color: #45a049;
+        }
+          #Home{
+           
+            background-image: url("/Resimler/");
+            background-color: #cccccc;
+            width: 100%;
+            height: 700px;
+            border-radius: 30px;
+            bottom: -1x;
+            position: relative;
+          }
+
+          	.box{	
+            font-family: 'Courier New', Courier, monospace;
+   	 		    float: left;
+			      border-color: grey;
+			      color: grey;
+   		      display: flex;
+   	      	flex-wrap: wrap;
+   		    	margin: 2%;
+    	    	justify-content: space-around;
+        		border-style: dashed;
+		      	border-radius: 15px;
+   			    font-size: 25px;
+   		    	width: 48%;
+          }
+          .Skills{
+            font-family: 'Courier New', Courier, monospace;
+            float: left;       
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2%;
+            justify-content: space-around;
+            border-style: dashed;
+            border-radius: 15px;
+            font-size: 25px;
+            width: 250px;
+            }
+            #mySkills{
+			  font-family: 'Courier New', Courier, monospace;
+			  display: flex;
+	          justify-content: center;
+	          align-items: center;
+              position: relative;
+              top: 100px;
+            }
+          .Links{
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;     
+            display: inline-block;
+            position: relative;
+            
+          }
+          .Skills li{
+            list-style: none; 
+          }
+          .Projects li
+          {
+            list-style: none;
+          }
+	  #About{
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	  }
+
+    #Projects{
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+    }
+    .boxProject{	
+	  font-family: 'Courier New', Courier, monospace;
+    float: left;       
+    position: relative;
+    top: 50px;
+    border-style: dashed;
+    border-color: gray;
+    color:gray;
+    width: 25%;
+    height: auto;;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+      justify-content: space-around;
+    }
+
+    .projectButton {
+      display: inline-block;
+      padding: 10px 20px;
+      height: auto;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      border-radius: 30px; 
+      background-color: red;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+  }
+  .projectButton:hover {
+    background-color: darkred;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#contact{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.container{
+  width: 80%;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+}
+.title{
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  margin-bottom: 3rem;
+}
+.contact-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-left{
+  width: 40%;
+  padding: 3rem;
+}
+.cont-top{
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+.cont-element{
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.cont-element i{
+  color: black;
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: all 0.4s ease;
+}
+.cont-element:hover i{
+  background-color: black;
+  color: black;
+}
+.cont-element a{
+  color: black;
+  text-decoration: none;
+}
+.cont-bottom{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont-bottom a{
+  color: black;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.cont-bottom a:hover{
+  color: #181818;
+  background-color: black;
+}
+
+
+.cont-right{
+  width: 60%;
+  padding: 3rem;
+}
+.cont-right form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont-right form input, textarea, button{
+  width: 100%;
+  margin: 1rem 0;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid black;
+  color: black; 
+  transition: all 0.4s ease;
+}
+.cont-right form button{
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+.cont-right form button:hover{
+  background-color: black;
+  color: #ffffff;
+}
+.cont-right form input:hover, textarea:hover{
+  color: black;
+  background-color: #ffffff;
+}
+.cont-right form input:focus, textarea:focus{
+  color: black;
+  background-color: #ffffff;
+}
+
+#end
+{
+    width: 100%;
+    height: 20%;
+    border-radius: 2%;
+    background-color: teal;
+    position: relative;
+    color: white;
+    top: 100px;
+}
+         @media only screen and (max-width: 800px) {
+    #Projects{
+		display: block;
+        text-align: center;
+			
+    }
+    .boxProject{	
+	        font-family: 'Courier New', Courier, monospace;      
+            margin: 2%;
+            border-style: dashed;
+            border-radius: 15px;
+            font-size: 25px;
+            width: 100%;
+    }
+			 .box{
+		    font-family: 'Courier New', Courier, monospace;      
+            margin: 2%;
+            border-style: dashed;
+            border-radius: 15px;
+            font-size: 25px;
+            width: 100%;
+
+          }
+    #About {
+        display: block;
+        text-align: center;
+    }
+		#mainText {
+          text-align:left;
+          bottom: -320px;
+          position: relative;
+          color:rgb(8, 90, 90);
+          font-size:40px;
+          font-weight:500;
+          line-height:70px;
+          }
+		.guzel-button {
+            display: inline-block;
+            position: relative;
+            top: 70%;
+            left: 30%;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+		.slide-animation{
+			 display:none;
+			}
+	 	.container
+			 {
+				 display:none;
+			 }
+		footer
+			 {
+				 display:none;
+			 }
+       .dropdown_menu{
+        display: block;
+       }
+  }
